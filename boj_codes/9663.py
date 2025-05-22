@@ -17,9 +17,9 @@ def queenPossible(currentX, currentY, MaxX, MaxY, deep):
         return
     if currentY == MaxY:
         return
-    if currentX == MaxX:
-        print('is action!!')
-        return
+    # if currentX == MaxX:
+    #     print('is action!!')
+    #     return
     
     for moveingX in range(MaxX):
         if moveingX not in check:
@@ -27,7 +27,7 @@ def queenPossible(currentX, currentY, MaxX, MaxY, deep):
                 check.append(moveingX)
                 queenPossible(0, currentY + 1, MaxX, MaxY, deep - 1)
                 check.pop()
-            
+    
         
         # if not len(check):
         #     check.append(currentY)
