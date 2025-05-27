@@ -33,7 +33,6 @@ def recursion(paperList, leftX, leftY, RightX, RightY):
             if checkPaper != paperList[i][ii]:
                 isCheck = False
                 break
-        
     if isCheck == True:
         if checkPaper == 1:
             blue += 1
