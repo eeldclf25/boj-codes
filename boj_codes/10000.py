@@ -8,7 +8,7 @@ def func(inputValue):
         front = one - ran
         end = one + ran
         frontList.append([front, end - front, end - front])
-        endList.append([end, end - front])
+        endList.append(end)
     frontList.sort(key=lambda x: (-x[0], x[1]))
     endList.sort()
     endList.reverse()
@@ -16,7 +16,7 @@ def func(inputValue):
     count = 0
     stackList = []
     while len(frontList) != 0 or len(endList) != 0:
-        if len(frontList) != 0 and frontList[-1][0] < endList[-1][0]:
+        if len(frontList) != 0 and frontList[-1][0] < endList[-1]:
             stackList.append(frontList.pop())
         else:
             endList.pop()
