@@ -17,7 +17,7 @@ def func(inputValue):
             
             if (index, total) in dp:
                 return dp[(index, total)]
-            
+            92
             use_it = Recursion(index, total - coinList[index])
             skip_it = Recursion(index + 1, total)
             
