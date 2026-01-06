@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="boj-codes/boj-codes.vcxproj" Id="0df66f54-fc17-4d9f-9e4e-31ef08b0a048" />
+</Solution>
