@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe 활성 파일 빌드",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fo${workspaceFolder}\\temp\\",
+                "/Fe${workspaceFolder}\\temp\\${fileBasenameNoExtension}.exe",
+                "/Fd${workspaceFolder}\\temp\\${fileBasenameNoExtension}.compiler.pdb",
+                "${file}",
+                "/link",
+                "/PDB:${workspaceFolder}\\temp\\${fileBasenameNoExtension}.pdb",
+                "/ILK:${workspaceFolder}\\temp\\${fileBasenameNoExtension}.ilk"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "디버거에서 생성된 작업입니다."
+        }
+    ],
+    "version": "2.0.0"
+}
